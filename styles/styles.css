@@ -292,7 +292,7 @@ body{
     background-color: #fff;
     border: 1px solid #EAE9F2;
     border-radius: 10px;
-    margin: 35px auto 0;
+    margin: 20px auto 24px;
     color: #5454D4;
     font: 700 20px "DM Sans", sans-serif;
     padding: 20px 0;
@@ -319,6 +319,8 @@ body{
     color: #FFFFFF;
 }
 .plan-recomend>a{
+    margin: 35px auto 24px;
+    width: 305px;
     background-color: #9F3919;
     border: none;
     transition: background-color .4s ease;
