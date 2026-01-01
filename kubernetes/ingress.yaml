@@ -1,0 +1,23 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: saas-landing-page
+  namespace: default
+  annotations:
+    kubernetes.io/ingress.class: "traefik"
+spec:
+  rules:
+    - host: mmalabugin.ru
+      http:
+        paths:
+          - path: /SaasLandingPage
+            pathType: Prefix
+            backend:
+              service:
+                name: saas-landing-page
+                port:
+                  number: 80
+  tls:
+    - hosts:
+        - mmalabugin.ru
+      secretName: main-page-tls
