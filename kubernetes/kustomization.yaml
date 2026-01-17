@@ -4,9 +4,9 @@ kind: Kustomization
 resources:
   - deployment.yaml
   - service.yaml
-  - ingress.yaml
 
 images:
   - name: saas-landing-page-app
     newName: saas-landing-page-app
     newTag: latest
+
